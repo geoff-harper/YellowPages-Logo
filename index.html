@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Logo</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="chip--container">
+      <div class="yellow-chip--1"></div>
+      <div class="yellow-chip--2"></div>
+      <div class="yellow-chip--3"></div>
+      <div class="yellow-chip--4"></div>
+    </div>
+    <div class="main-black--container">
+      <div class="main-black--left"></div>
+      <div class="main-black--bottom"></div>
+    </div>
+    <div class="black-thumb"></div>
+    <div class="black-index"></div>
+    <div class="black-middle"></div>
+  </div>
+
+  <p class="highlighting-prompt">
+    How's it made?
+  </p>
+
+  <script>
+    var prompt = document.querySelector('.highlighting-prompt');
+
+    prompt.addEventListener('click', function(e) {
+      document.querySelector('.container').classList.toggle('highlight');
+      if(prompt.innerText === "I don't care anymore.") prompt.innerText = "How's it made?";
+        else prompt.innerText = "I don't care anymore.";
+    })
+  </script>
+</body>
+</html>
