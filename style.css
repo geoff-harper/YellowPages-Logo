@@ -153,12 +153,12 @@ div[class*="main-black--"] {
 .highlight .black-middle:hover,
 .highlight .black-thumb:hover,
 .highlight .black-index:hover {
-  background: cyan;
+  background: rgba(93, 221, 240, 0.5);
 }
 
 .highlight .black-index:hover::after,
 .highlight .black-middle:hover::before {
-  background-color: #ff3636;
+  background-color: rgba(255, 54, 54, 0.8);
 }
 
 .highlight .main-black--left,
